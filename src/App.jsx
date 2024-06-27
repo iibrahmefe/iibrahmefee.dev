@@ -27,7 +27,6 @@ function App() {
         <Projects />
         <Skills />
         <Music />
-
       </div>
     </div>
   )
