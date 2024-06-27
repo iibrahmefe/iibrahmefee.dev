@@ -16,10 +16,10 @@ const Navbar = () => {
                 <a href="https://www.instagram.com/iibrahmefe/" target="_blank">
                     <CiInstagram className="cursor-pointer hover:text-white/40 transition-all" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/ibrahim-efe-kutas-101474279/">
                     <FaLinkedin className="cursor-pointer hover:text-white/40 transition-all" />
                 </a>
-                <a href="">
+                <a href="https://github.com/iibrahmefe">
                     <LuGithub className="cursor-pointer hover:text-white/40 transition-all" />
 
                 </a>
