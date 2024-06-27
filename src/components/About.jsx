@@ -13,12 +13,15 @@ const About = () => {
                 <div className="right w-full lg:w-1/2 flex items-center ">
                     <div className="flex justify-center items-start lg:justify-center">
                         <p className="py-6 text-justify">
-                            İsmim İbrahim Efe Kutas ve İstanbul Gelişim Üniversitesinde öğrenciyim. Frontend development alanında büyük bir ilgi ve tutkuya sahibim. HTML ve CSS konularında orta düzeyde bilgiye sahip olmamın yanı sıra, web sayfalarının yapılarını oluşturmak ve stile vermek konusunda yetenekliyim. Ayrıca, JavaScriptte temel yeteneklere hakimim ve kullanıcı arayüzlerini etkileşimli hale getirme, form kontrolleri ve animasyonlar gibi temel JavaScript konularında deneyimim bulunmaktadır.
-                            Backend tarafında ise PHP ve Python gibi dillere yeni başladım. Bu dilleri öğrenerek web uygulamalarını daha kapsamlı ve dinamik hale getirme amacındayım. Ekibimle birlikte yürüttüğümüz <button className="bg-white rounded p-1 text-black  hover:bg-white/80 transition-all"><a href="https://www.learnhist.com.tr/" className="" target="_blank">Learnhist</a></button>  Tarih Sitesi projesinde hem Frontend hem de Backend alanlarında görev aldım. Frontend development konusundaki bilgilerimi sürekli olarak geliştirerek daha karmaşık projelerde çalışmak istiyorum.
-                    </p>
+                            Merhaba, adım İbrahim Efe Kutaş. İstanbul Gelişim Üniversitesinde Web Tasarım ve Kodlama bölümünden mezun oldum. Mezuniyetimden bu yana frontend development alanında aktif olarak çalışıyorum. HTML, CSS, JavaScript ve React gibi popüler teknolojilerde güçlü bir bilgiye sahibim.
+
+                            Özellikle frontend development üzerinde odaklanarak, kullanıcı dostu ve etkileyici web arayüzleri oluşturma konusunda deneyim kazandım. Bu süreçte, Tarih, Bilim, Felsefe, Mitoloji, Türk Tarihi ve Atatürk gibi konularda bilgi sunan Learnhist projesi gibi kapsamlı projelerde yer aldım. Learnhist, kullanıcılara bilgi verme hizmeti sunan ve bu konular üzerine odaklanan bir platformdur. Hem frontend hem de backend tarafında görev alarak, teknik bilgilerimi ve problem çözme becerilerimi geliştirme fırsatı buldum.
+
+                            Yeni teknolojilere ve gelişmelere açık bir şekilde yaklaşarak, sürekli olarak kendimi yenilemeye ve geliştirmeye devam ediyorum. Takım çalışmasına uyumlu, iletişim becerileri kuvvetli ve proaktif bir yaklaşıma sahibim. Amacım, kullanıcı odaklı çözümler üreterek ve teknoloji dünyasındaki en son trendleri takip ederek, web geliştirme alanında kariyerimi ilerletmek.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
         </div >
     )
 }
