@@ -7,7 +7,7 @@ const About = () => {
             <div className="flex flex-wrap">
                 <div className="left w-full lg:w-1/2 lg:p-8">
                     <div className="flex items-center justify-center h-96 w-96 mx-auto">
-                        <img src={efe} alt="" className="rounded" />
+                        <img src={efe} alt="" className="rounded mx-auto" />
                     </div>
                 </div>
                 <div className="right w-full lg:w-1/2 flex items-center ">
