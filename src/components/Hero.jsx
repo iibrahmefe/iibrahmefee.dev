@@ -1,8 +1,15 @@
 import efe from "../assets/efe.jpeg";
+import { motion } from "framer-motion";
 
 const heros = () => {
     return (
-        <div className="border-b border-neutral-900 pb-4 lg:mb-35 min-h-screen">
+        <motion.div
+            initial={{ opacity: 0, y: -100 }} // Başlangıç durumu (sayfanın dışında yukarıda)
+            animate={{ opacity: 1, y: 0 }}    // Animasyon son durumu (sayfa ortasında)
+            transition={{ duration: 1.5, ease: 'easeOut' }} // Geçiş süresi ve animasyon eğrisi/ Geçiş süresi
+
+            whileInView={{ opacity: 1, y: 0 }} // Sayfa içinde göründüğü sürece animasyon
+            className="border-b border-neutral-900 pb-4 lg:mb-35 min-h-screen">
             <div className="flex flex-wrap h-full">
                 <div className="left w-full lg:w-1/2 flex lg:items-center justify-center lg:justify-start pb-6   ">
                     <div className="flex flex-col items-center lg:items-start justify-center">
@@ -18,7 +25,7 @@ const heros = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

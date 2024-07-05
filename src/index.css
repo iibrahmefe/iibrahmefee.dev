@@ -8,3 +8,7 @@
 :root{
     font-family: "Montserrat" !important;
 }
+
+body {
+    @apply bg-black !important;
+}
