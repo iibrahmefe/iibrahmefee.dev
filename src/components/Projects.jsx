@@ -80,7 +80,7 @@ const Projects = () => {
             {/* Proje ayırma */}
             <div className="flex mb-8 flex-wrap lg:justify-center lg:gap-20">
                 <div className="w-full lg:w-1/4 ">
-                    <a href="https://vercel.com/iibrahmefes-projects/profil-page/8fpq718E1VT52qcfXktFkUWNvq7B" className="mb-2 font-bold text-white bg-clip-text text-2xl">Profile Page</a>
+                    <a href="https://profil-page.vercel.app/" className="mb-2 font-bold text-white bg-clip-text text-2xl">Profile Page</a>
                     <p className="text-lg">Frontend Mentor</p>
                     <p className="text-lg">Egzersiz</p>
                 </div>
