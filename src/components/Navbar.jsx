@@ -3,8 +3,6 @@ import { FaLinkedin } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";
 
 
-
-
 const Navbar = () => {
     return (
         <nav className=" mb-20 flex items-center justify-between py-6">
@@ -21,7 +19,6 @@ const Navbar = () => {
                 </a>
                 <a href="https://github.com/iibrahmefe">
                     <LuGithub className="cursor-pointer hover:text-white/40 transition-all" />
-
                 </a>
             </div>
         </nav>
