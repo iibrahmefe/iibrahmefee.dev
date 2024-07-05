@@ -17,7 +17,7 @@ const Projects = () => {
             <h2 className="text-center my-20 text-4xl font-bold">Projeler</h2>
             <div className="flex mb-10 flex-wrap lg:justify-center lg:gap-20">
                 <div className="w-full lg:w-1/4 ">
-                    <p className="mb-2 font-bold bg-gradient-to-r from-red-400  to-red-800 bg-clip-text text-2xl text-transparent"><a href="www.learnhist.com.tr">Learnhist</a></p>
+                    <p className="mb-2 font-bold bg-gradient-to-r from-red-400  to-red-800 bg-clip-text text-2xl text-transparent"><a href="https://www.learnhist.com.tr/">Learnhist</a></p>
                     <p className="text-lg">LearnHist: Atatürk, Türk Tarihi, Tarih, Bilim, Felsefe,Mitoloji, Sanat, Evrim</p>
                 </div>
                 <div className="w-full max-w-xl lg:w-3/4">
