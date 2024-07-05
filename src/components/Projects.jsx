@@ -66,8 +66,8 @@ const Projects = () => {
             <div className="flex mb-8 flex-wrap lg:justify-center lg:gap-20">
                 <div className="w-full lg:w-1/4 ">
                     <a href="https://landing-page-rho-steel.vercel.app/" className="mb-2 font-bold text-white bg-clip-text text-2xl">Landing Page</a>
-                    <p className="text-lg">Şuan bu projedesiniz</p>
-                    <p className="text-lg">Kişisel Portfolyo</p>
+                    <p className="text-lg">Frontend Mentor</p>
+                    <p className="text-lg">Egzersiz</p>
                 </div>
                 <div className="w-full max-w-xl lg:w-3/4">
                     <div className="flex items-center gap-5 mt-6 flex-wrap">
@@ -81,8 +81,8 @@ const Projects = () => {
             <div className="flex mb-8 flex-wrap lg:justify-center lg:gap-20">
                 <div className="w-full lg:w-1/4 ">
                     <a href="https://vercel.com/iibrahmefes-projects/profil-page/8fpq718E1VT52qcfXktFkUWNvq7B" className="mb-2 font-bold text-white bg-clip-text text-2xl">Profile Page</a>
-                    <p className="text-lg">Şuan bu projedesiniz</p>
-                    <p className="text-lg">Kişisel Portfolyo</p>
+                    <p className="text-lg">Frontend Mentor</p>
+                    <p className="text-lg">Egzersiz</p>
                 </div>
                 <div className="w-full max-w-xl lg:w-3/4">
                     <div className="flex items-center gap-5 mt-6 flex-wrap">
