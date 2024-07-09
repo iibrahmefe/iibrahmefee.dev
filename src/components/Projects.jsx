@@ -15,20 +15,20 @@ const ProjectLists = [
     },
     {
         name: "Landing Page",
-        description: "Frontend Mentor Egzersiz",
+        description: "Frontend Mentor Challenge",
         link: "https://landing-page-rho-steel.vercel.app/",
         image: LangingPage,
         tech: ["Html", "Css", "JavaScript"]
     },
     {
         name: "News Web Site",
-        description: "Frontend Mentor Egzersiz",
+        description: "Frontend Mentor Challenge",
         image: NewSite,
         tech: ["Html", "Css","JavaScript"]
     },
     {
         name: "Profile Page",
-        description: "Frontend Mentor Egzersiz",
+        description: "Frontend Mentor Challenge",
         link: "https://profil-page.vercel.app/",
         image: ProfilPage,
         tech: ["Html", "Css"]
