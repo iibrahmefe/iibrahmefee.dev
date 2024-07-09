@@ -10,9 +10,9 @@ const Navbar = () => {
         <nav className=" mb-20 flex items-center justify-between py-6">
             <div className="flex flex-shrink-0 items-center">
                 {/* <img src="" alt="iek-foto" /> */}
-                <h1 className="text-3xl font-semibold text-white">kutas.dev</h1>
+                <h1 className="lg:text-3xl font-semibold text-2xl text-white">kutas.dev</h1>
             </div>
-            <div className="m-8 flex items-center justify-center gap-4 text-4xl">
+            <div className="m-8 flex items-center justify-center gap-4 text-2xl lg:text-4xl">
                 <a href="https://www.instagram.com/iibrahmefe/" target="_blank">
                     <CiInstagram className="cursor-pointer hover:text-white/40 transition-all" />
                 </a>
