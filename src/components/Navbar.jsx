@@ -1,6 +1,8 @@
 import { CiInstagram } from "react-icons/ci";
 import { FaLinkedin } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";
+import { FaYoutube } from "react-icons/fa";
+
 
 
 const Navbar = () => {
@@ -19,6 +21,9 @@ const Navbar = () => {
                 </a>
                 <a href="https://github.com/iibrahmefe">
                     <LuGithub className="cursor-pointer hover:text-white/40 transition-all" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCjKwD9eDeUBPga8dRY6VQWw">
+                    <FaYoutube className="cursor-pointer hover:text-white/40 transition-all"  />
                 </a>
             </div>
         </nav>
