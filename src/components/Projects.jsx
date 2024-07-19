@@ -73,7 +73,7 @@ const Projects = () => {
                         <p className="mb-2 font-bold text-white bg-clip-text text-2xl text-transparent">
                             {item.name}
                         </p>
-                        <a href={item.link}>
+                        <a href={item.link} target="_blank">
                             {item.image && <img src={item.image} alt={item.name} className='flex-1' />}
                         </a>
                         <p className="text-lg mt-2">{item.description}</p>
