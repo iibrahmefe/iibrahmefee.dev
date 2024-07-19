@@ -11,7 +11,7 @@ const ProjectLists = [
         description: "LearnHist: Atatürk, Türk Tarihi, Tarih, Bilim, Felsefe, Mitoloji, Sanat, Evrim",
         link: "https://www.learnhist.com.tr/",
         image: Learnhist,
-        tech: ["Html", "Css", "Bootstrap", "JavaScript", "PHP","DriftChat"]
+        tech: ["Html", "Css", "Bootstrap", "JavaScript", "PHP", "DriftChat"]
     },
     {
         name: "Landing Page",
@@ -23,8 +23,9 @@ const ProjectLists = [
     {
         name: "News Web Site",
         description: "Frontend Mentor Challenge",
+        link: "https://frontend-exercises-news-site.vercel.app/",
         image: NewSite,
-        tech: ["Html", "Css","JavaScript"]
+        tech: ["Html", "Css", "JavaScript"]
     },
     {
         name: "Profile Page",
@@ -39,7 +40,7 @@ const ProjectLists = [
         description: "Kişisel Portfolyo, Şuan bu projedesiniz",
         link: "https://ibrahmefe-dev.vercel.app/",
         image: null,
-        tech: ["Html", "Css", "Tailwind", "React","ReactMotion","Reactİcons"]
+        tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons"]
     }
 ];
 
@@ -52,8 +53,8 @@ const techColors = {
     DriftChat: "bg-blue-600",
     Tailwind: "bg-blue-700",
     React: "bg-blue-400",
-    ReactMotion:"bg-purple-600",
-    Reactİcons:"bg-red-600"
+    ReactMotion: "bg-purple-600",
+    Reactİcons: "bg-red-600"
 };
 
 const Projects = () => {
@@ -73,7 +74,7 @@ const Projects = () => {
                             {item.name}
                         </p>
                         <a href={item.link}>
-                        {item.image && <img src={item.image} alt={item.name}  className='flex-1'/>}
+                            {item.image && <img src={item.image} alt={item.name} className='flex-1' />}
                         </a>
                         <p className="text-lg mt-2">{item.description}</p>
                     </div>
