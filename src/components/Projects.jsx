@@ -4,6 +4,7 @@ import Learnhist from "../assets/Learnhist-Resim.png";
 import LangingPage from "../assets/Landing-Page.png";
 import NewSite from "../assets/News-Site.png";
 import ProfilPage from "../assets/Profil-Page.png";
+import Kutasdev from "../assets/kutas.dev.png";
 
 const ProjectLists = [
     {
@@ -39,7 +40,7 @@ const ProjectLists = [
         name: "Kutas.dev",
         description: "Kişisel Portfolyo, Şuan bu projedesiniz",
         link: "https://ibrahmefe-dev.vercel.app/",
-        image: null,
+        image: Kutasdev,
         tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons"]
     }
 ];
