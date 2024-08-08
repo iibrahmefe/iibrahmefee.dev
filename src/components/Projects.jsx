@@ -5,6 +5,7 @@ import LangingPage from "../assets/Landing-Page.png";
 import NewSite from "../assets/News-Site.png";
 import ProfilPage from "../assets/Profil-Page.png";
 import Kutasdev from "../assets/kutas.dev.png";
+import Youtube from "../assets/Youtube-wallpaper.png";
 
 const ProjectLists = [
     {
@@ -39,10 +40,16 @@ const ProjectLists = [
     {
         name: "Kutas.dev",
         description: "Kişisel Portfolyo, Şuan bu projedesiniz",
-        link: "https://ibrahmefe-dev.vercel.app/",
         image: Kutasdev,
         tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons"]
-    }
+    },
+    {
+        name: "Youtube React Clone",
+        description: "Youtube web sitesi",
+        image: Youtube,
+        link: "https://youtube-react-clone-two.vercel.app/",
+        tech: ["Html", "Css", "Tailwind", "React", " Reactİcons", "ReactRouterDom"]
+    },
 ];
 
 const techColors = {
@@ -55,7 +62,8 @@ const techColors = {
     Tailwind: "bg-blue-700",
     React: "bg-blue-400",
     ReactMotion: "bg-purple-600",
-    Reactİcons: "bg-red-600"
+    Reactİcons: "bg-red-600",
+    ReactRouterDom: "bg-red-500"
 };
 
 const Projects = () => {
@@ -94,5 +102,4 @@ const Projects = () => {
         </motion.div>
     );
 };
-
 export default Projects;
