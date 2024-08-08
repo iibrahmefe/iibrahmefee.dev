@@ -16,6 +16,13 @@ const ProjectLists = [
         tech: ["Html", "Css", "Bootstrap", "JavaScript", "PHP", "DriftChat"]
     },
     {
+        name: "Youtube React Clone",
+        description: "Youtube web sitesi",
+        image: Youtube,
+        link: "https://youtube-react-clone-two.vercel.app/",
+        tech: ["Html", "Css", "Tailwind", "React", " Reactİcons", "ReactRouterDom"]
+    },
+    {
         name: "Landing Page",
         description: "Frontend Mentor Challenge",
         link: "https://landing-page-rho-steel.vercel.app/",
@@ -42,14 +49,8 @@ const ProjectLists = [
         description: "Kişisel Portfolyo, Şuan bu projedesiniz",
         image: Kutasdev,
         tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons"]
-    },
-    {
-        name: "Youtube React Clone",
-        description: "Youtube web sitesi",
-        image: Youtube,
-        link: "https://youtube-react-clone-two.vercel.app/",
-        tech: ["Html", "Css", "Tailwind", "React", " Reactİcons", "ReactRouterDom"]
-    },
+    }
+    
 ];
 
 const techColors = {
