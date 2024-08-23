@@ -13,44 +13,49 @@ const ProjectLists = [
         description: "LearnHist: Atatürk, Türk Tarihi, Tarih, Bilim, Felsefe, Mitoloji, Sanat, Evrim",
         link: "https://www.learnhist.com.tr/",
         image: Learnhist,
-        tech: ["Html", "Css", "Bootstrap", "JavaScript", "PHP", "DriftChat"]
+        tech: ["Html", "Css", "Bootstrap", "JavaScript", "PHP", "DriftChat"],
+        status: "Tamamlandı"
     },
     {
         name: "Youtube React Clone",
         description: "Youtube web sitesi",
         image: Youtube,
         link: "https://youtube-react-clone-two.vercel.app/",
-        tech: ["Html", "Css", "Tailwind", "React", " Reactİcons", "ReactRouterDom"]
+        tech: ["Html", "Css", "Tailwind", "React", " Reactİcons", "ReactRouterDom"],
+        status: "Hazırlanıyor"
     },
     {
         name: "Landing Page",
         description: "Frontend Mentor Challenge",
         link: "https://landing-page-rho-steel.vercel.app/",
         image: LangingPage,
-        tech: ["Html", "Css", "JavaScript"]
+        tech: ["Html", "Css", "JavaScript"],
+        status: "Tamamlandı"
     },
     {
         name: "News Web Site",
         description: "Frontend Mentor Challenge",
         link: "https://frontend-exercises-news-site.vercel.app/",
         image: NewSite,
-        tech: ["Html", "Css", "JavaScript"]
+        tech: ["Html", "Css", "JavaScript"],
+        status: "Tamamlandı"
     },
     {
         name: "Profile Page",
         description: "Frontend Mentor Challenge",
         link: "https://profil-page.vercel.app/",
         image: ProfilPage,
-        tech: ["Html", "Css"]
+        tech: ["Html", "Css"],
+        status: "Tamamlandı"
     },
 
     {
         name: "Kutas.dev",
         description: "Kişisel Portfolyo, Şuan bu projedesiniz",
         image: Kutasdev,
-        tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons"]
+        tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons"],
     }
-    
+
 ];
 
 const techColors = {
@@ -67,6 +72,11 @@ const techColors = {
     ReactRouterDom: "bg-red-500"
 };
 
+const statusColors = {
+    Hazırlanıyor: "bg-green-500",
+    Tamamlandı: "bg-blue-500",
+};
+
 const Projects = () => {
     return (
         <motion.div
@@ -80,9 +90,18 @@ const Projects = () => {
             {ProjectLists.map((item, index) => (
                 <div key={index} className="flex mb-10 flex-wrap lg:justify-center lg:gap-20">
                     <div className="w-full lg:w-1/4 ">
-                        <p className="mb-2 font-bold text-white bg-clip-text text-2xl text-transparent">
-                            {item.name}
-                        </p>
+                        <div className='flex items-center justify-between'>
+                            <p className="mb-2 font-bold text-white bg-clip-text text-xl text-transparent">
+                                {item.name}
+                            </p>
+                            {item.status && (
+                                <span
+                                    className={`text-[14px] px-4 mb-2 h-7 flex items-center justify-center text-nowrap rounded-md ${statusColors[item.status]} text-white`}
+                                >
+                                    {item.status}
+                                </span>
+                            )}
+                        </div>
                         <a href={item.link} target="_blank">
                             {item.image && <img src={item.image} alt={item.name} className='flex-1' />}
                         </a>
