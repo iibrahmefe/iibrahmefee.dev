@@ -1,13 +1,32 @@
 import efe from "../assets/lh4.jpg";
 
+import React, { useRef } from "react";
+
+// Resme çift tıklandığında açılacak olan kod
 const About = () => {
+    const imgRef = useRef(null);
+    const handleDoubleClick = () => {
+        if (imgRef.current) {
+            if (imgRef.current.requestFullscreen) {
+                imgRef.current.requestFullscreen();
+            } else if (imgRef.current.mozRequestFullScreen) { /* Firefox */
+                imgRef.current.mozRequestFullScreen();
+            } else if (imgRef.current.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                imgRef.current.webkitRequestFullscreen();
+            } else if (imgRef.current.msRequestFullscreen) { /* IE/Edge */
+                imgRef.current.msRequestFullscreen();
+            }
+        }
+    }
+    // Resme çift tıklandığında açılacak olan kod
     return (
         <div className="border-b border-neutral-900 pb-4">
             <h2 className="text-center text-4xl font-bold p-6">Hakkımda</h2>
             <div className="flex flex-wrap">
                 <div className="left w-full lg:w-1/2 lg:p-8">
                     <div className="flex items-center justify-center mb-5 lg:h-full lg:w-full mx-auto">
-                        <img src={efe} alt="" className="rounded mx-auto" />
+                        {/* ref refe tanımlandı çift tıklanması içinde onDoubleClick methoduna yukarda ne tanımladıysak onu ekledik */}
+                        <img src={efe} alt="" ref={imgRef} onDoubleClick={handleDoubleClick} className="rounded mx-auto hover:cursor-pointer" />
                     </div>
                 </div>
                 <div className="right w-full lg:w-1/2 flex items-center ">
