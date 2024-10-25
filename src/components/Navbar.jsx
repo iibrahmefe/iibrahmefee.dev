@@ -11,7 +11,7 @@ import "../style/animateButton.css"
 
 const Navbar = () => {
     return (
-        <nav className="flex fixed top-0 left-0 right-0 mx-auto z-50  items-center justify-between py-1 backdrop-blur-lg shadow-md shadow-white/10 px-10">
+        <nav className="flex fixed top-0 left-0 right-0 mx-auto z-50  items-center justify-between py-1 backdrop-blur-lg shadow-md shadow-white/10 px-10 ">
             <div className="flex flex-shrink-0 items-center">
                 {/* <img src="" alt="iek-foto" /> */}
                 <a href="/" className="navbarLogo">

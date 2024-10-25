@@ -30,7 +30,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="right w-full lg:w-1/2 flex items-center ">
-                    <div className="flex justify-center items-start lg:justify-center">
+                    <div className="flex justify-center items-start">
                         <p className="lg:p-10 text-justify lg:text-base text-sm">
                             Merhaba, adım İbrahim Efe Kutas. İstanbul Gelişim Üniversitesinde Web Tasarım ve Kodlama bölümünden mezun oldum. Mezuniyetimden bu yana frontend development alanında aktif olarak çalışıyorum. HTML, CSS, JavaScript ve React gibi popüler teknolojilerde güçlü bir bilgiye sahibim.
 

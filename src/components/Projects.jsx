@@ -1,95 +1,57 @@
 import { motion } from 'framer-motion';
-
-import Learnhist from "../assets/Learnhist-Resim.png";
-import LangingPage from "../assets/Landing-Page.png";
-import NewSite from "../assets/News-Site.png";
-import ProfilPage from "../assets/Profil-Page.png";
-import Kutasdev from "../assets/kutas.dev.png";
-import Youtube from "../assets/Youtube-wallpaper.png";
-
-const ProjectLists = [
-    {
-        name: "Learnhist",
-        description: "LearnHist: Atatürk, Türk Tarihi, Tarih, Bilim, Felsefe, Mitoloji, Sanat, Evrim",
-        link: "https://www.learnhist.com.tr/",
-        image: Learnhist,
-        tech: ["Html", "Css", "Bootstrap", "JavaScript", "PHP", "DriftChat"],
-        status: "Tamamlandı"
-    },
-    {
-        name: "Youtube React Clone",
-        description: "Youtube web sitesi",
-        image: Youtube,
-        link: "https://youtube-react-clone-two.vercel.app/",
-        tech: ["Html", "Css", "Tailwind", "React", " Reactİcons", "ReactRouterDom"],
-        status: "Hazırlanıyor"
-    },
-    {
-        name: "Landing Page",
-        description: "Frontend Mentor Challenge",
-        link: "https://landing-page-rho-steel.vercel.app/",
-        image: LangingPage,
-        tech: ["Html", "Css", "JavaScript"],
-        status: "Tamamlandı"
-    },
-    {
-        name: "News Web Site",
-        description: "Frontend Mentor Challenge",
-        link: "https://frontend-exercises-news-site.vercel.app/",
-        image: NewSite,
-        tech: ["Html", "Css", "JavaScript"],
-        status: "Tamamlandı"
-    },
-    {
-        name: "Profile Page",
-        description: "Frontend Mentor Challenge",
-        link: "https://profil-page.vercel.app/",
-        image: ProfilPage,
-        tech: ["Html", "Css"],
-        status: "Tamamlandı"
-    },
-
-    {
-        name: "Kutas.dev",
-        description: "Kişisel Portfolyo, Şuan bu projedesiniz",
-        image: Kutasdev,
-        tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons"],
-    }
-
-];
-
-const techColors = {
-    Html: "bg-orange-500",
-    Css: "bg-blue-600",
-    Bootstrap: "bg-purple-600",
-    JavaScript: "bg-yellow-500",
-    PHP: "bg-indigo-600",
-    DriftChat: "bg-blue-600",
-    Tailwind: "bg-blue-700",
-    React: "bg-blue-400",
-    ReactMotion: "bg-purple-600",
-    Reactİcons: "bg-red-600",
-    ReactRouterDom: "bg-red-500"
-};
-
-const statusColors = {
-    Hazırlanıyor: "bg-green-500",
-    Tamamlandı: "bg-blue-500",
-};
+import { useState } from 'react';
+import { ProjectLists, statusColors, techColors } from '../utils/const';
 
 const Projects = () => {
+    const [filter, setFilter] = useState(''); // Durum filtresi için useState kullan
+    const [activeTab, setActiveTab] = useState(''); // Aktif tab durumunu tutmak için
+
+    // Duruma göre projeleri filtrele
+    const filteredProjects = filter
+        ? ProjectLists.filter(project => project.status === filter)
+        : ProjectLists;
+
     return (
         <motion.div
             initial={{ opacity: 0, y: -100 }} // Başlangıç durumu (sayfanın dışında yukarıda)
             animate={{ opacity: 1, y: 0 }}    // Animasyon son durumu (sayfa ortasında)
-            transition={{ duration: 1.5, ease: 'easeOut' }} // Geçiş süresi ve animasyon eğrisi/ Geçiş süresi
+            transition={{ duration: 1.5, ease: 'easeOut' }} // Geçiş süresi ve animasyon eğrisi
             whileInView={{ opacity: 1, y: 0 }} // Sayfa içinde göründüğü sürece animasyon
-            className=" border-b border-neutral-700 pb-4 "
+            className="border-b border-neutral-700 pb-4"
         >
-            <h2 className="text-center my-20 text-4xl font-bold">Projeler</h2>
-            {ProjectLists.map((item, index) => (
+            <h2 className="text-center text-4xl font-bold">Projeler</h2>
+            <div className='w-1/2 mx-auto py-4 my-4 rounded-sm flex items-center justify-evenly'>
+                <button
+                    className={`border rounded-md px-2 py-1.5 ${activeTab === 'Tamamlandı' ? 'bg-green-500 text-white' : ''}`}
+                    onClick={() => {
+                        setFilter('Tamamlandı'); // "Tamamlandı" butonuna tıklanınca durumu güncelle
+                        setActiveTab('Tamamlandı'); // Aktif tabı güncelle
+                    }}
+                >
+                    Tamamlanmış
+                </button>
+                <button
+                    className={`border rounded-md px-2 py-1.5 ${activeTab === 'Hazırlanıyor' ? 'bg-green-500 text-white' : ''}`} // Burada typo düzeltilmiş
+                    onClick={() => {
+                        setFilter('Hazırlanıyor'); // "Hazırlanıyor" butonuna tıklanınca durumu güncelle
+                        setActiveTab('Hazırlanıyor'); // Aktif tabı güncelle
+                    }}
+                >
+                    Hazırlanıyor
+                </button>
+                <button
+                    className={`border rounded-md px-2 py-1.5 ${activeTab === '' ? 'bg-green-500 text-white' : ''}`}
+                    onClick={() => {
+                        setFilter(''); // Tüm projeleri göstermek için filtreyi sıfırla
+                        setActiveTab(''); // Aktif tabı sıfırla
+                    }}
+                >
+                    Hepsi
+                </button>
+            </div>
+            {filteredProjects.map((item, index) => (
                 <div key={index} className="flex mb-10 flex-wrap lg:justify-center lg:gap-20">
-                    <div className="w-full lg:w-1/4 ">
+                    <div className="w-full lg:w-1/4">
                         <div className='flex items-center justify-between'>
                             <p className="mb-2 font-bold text-white bg-clip-text text-xl text-transparent">
                                 {item.name}
@@ -102,7 +64,7 @@ const Projects = () => {
                                 </span>
                             )}
                         </div>
-                        <a href={item.link} target="_blank">
+                        <a href={item.link} target="_blank" rel="noopener noreferrer">
                             {item.image && <img src={item.image} alt={item.name} className='flex-1' />}
                         </a>
                         <p className="text-lg mt-2">{item.description}</p>
@@ -111,9 +73,11 @@ const Projects = () => {
                         <h6 className="mb-6">
                             <span className="text-xl font-semibold text-purple-100">Kullanılan Teknolojiler</span>
                         </h6>
-                        <div className="flex text-center flex-1 gap-5 mt-4 flex-wrap ">
+                        <div className="flex text-center flex-1 gap-5 mt-4 flex-wrap">
                             {item.tech.map((tech, techIndex) => (
-                                <span key={techIndex} className={`p-2 px-4 rounded-sm ${techColors[tech] || 'bg-gray-600'}`}>{tech}</span>
+                                <span key={techIndex} className={`p-2 px-4 rounded-sm ${techColors[tech] || 'bg-gray-600'}`}>
+                                    {tech}
+                                </span>
                             ))}
                         </div>
                     </div>
@@ -122,4 +86,5 @@ const Projects = () => {
         </motion.div>
     );
 };
+
 export default Projects;
