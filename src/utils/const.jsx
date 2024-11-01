@@ -17,6 +17,7 @@ import NewSite from "../assets/News-Site.png";
 import ProfilPage from "../assets/Profil-Page.png";
 import Kutasdev from "../assets/kutas.dev.png";
 import Youtube from "../assets/Youtube-wallpaper.png";
+import TwitterWallpaper from "../assets/Twitter-wallpaper.png";
 
 
 export const CodingSkills = [
@@ -70,6 +71,14 @@ const ProjectLists = [
         image: Youtube,
         link: "https://youtube-react-clone-two.vercel.app/",
         tech: ["Html", "Css", "Tailwind", "React", " Reactİcons", "ReactRouterDom"],
+        status: "Hazırlanıyor"
+    },
+    {
+        name: "Twitter 'x' Clone",
+        description: "Twitter web sitesinin kopyası",
+        link: "https://x-clone-react-gold.vercel.app",
+        image: TwitterWallpaper,
+        tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons", "ReactRouterDom", "ClassNames"],
         status: "Hazırlanıyor"
     },
     {
