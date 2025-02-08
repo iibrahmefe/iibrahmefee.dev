@@ -18,6 +18,7 @@ import ProfilPage from "../assets/Profil-Page.png";
 import Kutasdev from "../assets/kutas.dev.png";
 import Youtube from "../assets/Youtube-wallpaper.png";
 import TwitterWallpaper from "../assets/Twitter-wallpaper.png";
+import Audiophile from "../assets/Audiophile.png";
 
 
 export const CodingSkills = [
@@ -110,6 +111,13 @@ const ProjectLists = [
         description: "Kişisel Portfolyo, Şuan bu projedesiniz",
         image: Kutasdev,
         tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons"],
+    },
+    {
+        name: "Audiophile",
+        description: "Figma Uygulaması",
+        link: "https://audiophile-eight-orpin.vercel.app",
+        image: Audiophile,
+        tech: ["Html", "Css", "Tailwind", "React", "ReactMotion", "Reactİcons", "ReactRouterDom"],
     }
 ];
 
